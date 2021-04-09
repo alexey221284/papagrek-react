@@ -1,18 +1,15 @@
 import React from 'react';
-import {Router, Route} from 'react-router-dom';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import {BrowserRouter, Router, Route} from 'react-router-dom';
 import Main from "../components/Main";
+import Catalog from "../components/Catalog";
 
 
 const AppRouter = () => {
 	return (
-		<Router>
-			<div>
-				<Route exact path="/" component={}/>
-				<Route path="/main" component={Main}/>
-			</div>
-		</Router>
+		<BrowserRouter >
+				<Route exact path="/" component={Main}/>
+				<Route path="/catalog" component={Catalog}/>
+		</BrowserRouter >
 	)
 }
 
