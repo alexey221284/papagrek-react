@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from "./Header";
 import Footer from "./Footer";
+import ProductsBlock from "./ProductsBlock";
 
 const Catalog = () => {
 	return(
-		<div>
+		<div className="catalog">
 			<Header/>
-			<h1>Каталог мать его!!!</h1>
+			<ProductsBlock/>
 			<Footer/>
 		</div>
 
