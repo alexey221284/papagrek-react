@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": "TR0001GB",
+      "title": "Тканевый ремешок",
+      "description": "Голубой Cornflower N3 + 42mm or 44mm",
+      "entry price": 107,
+      "price": 250,
+      "warehouse": "center",
+      "order date": "19.10.2019",
+      "receipt date": "19.11.2019",
+      "Order number": 1
+    },
+    {
+      "id": "TR0005TS",
+      "title": "Тканевый ремешок",
+      "description": "Темно-синий deeple blue + 42mm or 44mm",
+      "entry price": 107,
+      "price": 250,
+      "warehouse": "center",
+      "order date": "19.10.2019",
+      "receipt date": "19.11.2019",
+      "Order number": 1
+    }
+  ]
+}
