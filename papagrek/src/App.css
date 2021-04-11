@@ -349,8 +349,8 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   flex-direction: column;
 }
 
-div p, h4 {
-  color: #fff;
+.footer div p, h4 {
+  color: #ffffff;
 }
 
 .submenuWrapper {
@@ -467,7 +467,12 @@ div p, h4 {
 .productsBlock {
   display: flex;
   flex-direction: row;
-  background: red;
   min-height: 60vh;
   margin-top: 12vh;
+  color: #753175;
+}
+
+.category {
+  width: 18vw;
+  background: #f7b1f7;
 }
