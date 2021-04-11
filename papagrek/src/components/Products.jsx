@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from "./Product";
+import CardProduct from "./CardProduct";
 import Api from "./Api";
 
 class Products extends React.Component {
@@ -16,20 +16,20 @@ class Products extends React.Component {
 		const { title, price } = this.state;
 
 		return (
-			<Product title={title} price={price}  />
+			<CardProduct title={title} price={price}  />
 		);
 	}
 
 	async componentDidMount() {
 		try {
-			let userData = await Api.get('/products/1', {
+			let userData = await Api.get('/products', {
 				params: {
 					results: 1,
 					inc: 'title, price'
 				}
 			});
 
-			userData = userData.data;
+			userData = userData.data[0];
 
 			const title = userData.title;
 			const price = userData.price;
@@ -43,15 +43,6 @@ class Products extends React.Component {
 			console.log(`Axios request failed: ${e}`);
 		}
 	}
-// ...
-
 }
-
-	// axios
-	// 	.get("https://my-json-server.typicode.com/alexey221284/papagrek-react/products/2")
-	// 	.then(response => {
-	// 		return response.data
-	// 	});
-
 
 export default Products
