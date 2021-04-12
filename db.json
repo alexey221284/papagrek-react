@@ -8,7 +8,7 @@
           "id": "1",
           "title": "Тканевый ремешок",
           "description": "Голубой Cornflower N3 + 42mm or 44mm",
-          "urlPhoto": "src/img/products/1/2.jpg",
+          "urlPhoto": "../img/products/1/2.jpg",
           "entry price": 107,
           "price": 250,
           "warehouse": "center",

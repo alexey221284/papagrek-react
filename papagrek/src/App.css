@@ -479,4 +479,27 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
 
 .cardProduct img {
   width: 200px;
+  margin: 10px;
+}
+
+.cardProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
+
+.cardProduct:hover {
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

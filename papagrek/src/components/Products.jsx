@@ -21,7 +21,16 @@ class Products extends React.Component {
 		return (
 			<div>
 				<Breadcrumbs categoryName={categoryName} />
-				<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+				<div className="cardContainer">
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
+				</div>
+
 			</div>
 
 		);
