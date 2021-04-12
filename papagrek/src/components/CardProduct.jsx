@@ -20,8 +20,6 @@ class CardProduct extends React.Component {
 	}
 }
 
-
-
 CardProduct.propTypes = {
 	title: PropTypes.string,
 	price: PropTypes.number
