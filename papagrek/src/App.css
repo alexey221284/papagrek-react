@@ -476,3 +476,7 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   width: 18vw;
   background: #f7b1f7;
 }
+
+.cardProduct img {
+  width: 200px;
+}
