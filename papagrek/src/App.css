@@ -477,12 +477,12 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   background: #f7b1f7;
 }
 
-.cardProduct img {
+.ProductItem img {
   width: 200px;
   margin: 10px;
 }
 
-.cardProduct {
+.ProductItem {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -492,7 +492,7 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   margin: 10px;
 }
 
-.cardProduct:hover {
+.ProductItem:hover {
   border: 1px solid gray;
   border-radius: 5px;
   cursor: pointer;

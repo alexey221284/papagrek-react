@@ -1,5 +1,5 @@
 import React from 'react';
-import CardProduct from "./CardProduct";
+import ProductItem from "./ProductItem";
 import Api from "./Api";
 import Breadcrumbs from "./Breadcrumbs";
 
@@ -15,56 +15,43 @@ class Products extends React.Component {
 		};
 	}
 
-	render() {
-		const { categoryName, title, price, urlPhoto } = this.state;
-
-		return (
-			<div>
-				<Breadcrumbs categoryName={categoryName} />
-				<div className="cardContainer">
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-					<CardProduct  title={title} price={price} urlPhoto={urlPhoto}  />
-				</div>
-
-			</div>
-
-		);
-	}
-
 	async componentDidMount() {
 		try {
-			let userData = await Api.get('/category/1', {
-				params: {
-					results: 1,
-					inc: 'title, price'
-				}
-			});
+			let allProductsFirstCategory = await Api.get('/category/2');
+			let productsCard = allProductsFirstCategory.data.products;
 
-			userData = userData.data;
-			console.log(userData)
+			const categoryName = allProductsFirstCategory.data.title;
 
-			const categoryName = userData.title;
-			const title = userData.products[0].title;
-			const price = userData.products[0].price;
-			const urlPhoto = userData.products[0].urlPhoto;
+			let productsCardJSX = productsCard
+				.map(card =>
+					<ProductItem title={card.title}
+								 price={card.price}
+								 urlPhoto={card.urlPhoto}
+								 description={card.description}/>
+				);
 
-			console.log(title)
 			this.setState({
 				...this.state, ...{
 					categoryName,
-					title,
-					price,
-					urlPhoto
+					productsCardJSX
 				}
 			});
 		} catch (e) {
 			console.log(`Axios request failed: ${e}`);
 		}
+	}
+
+	render() {
+		let {categoryName, productsCardJSX} = this.state;
+
+		return (
+			<div>
+				<Breadcrumbs categoryName={categoryName}/>
+				<div className="cardContainer">
+					{ productsCardJSX }
+				</div>
+			</div>
+		);
 	}
 }
 

@@ -6,7 +6,7 @@ class Breadcrumbs extends React.Component {
 		const { categoryName } = this.props;
 		return(
 			<div>
-				<h1>Категория: {categoryName}</h1>
+				<h2>Категории / {categoryName}</h2>
 			</div>
 		)
 	}
