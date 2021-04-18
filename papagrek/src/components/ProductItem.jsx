@@ -9,9 +9,9 @@ class ProductItem extends React.Component {
 		return(
 			<div className="ProductItem">
 				<img src={urlPhoto} alt="Фото товара" />
-				<h2>{title}</h2>
+				<h5>{title}</h5>
 				<p>{description}</p>
-				<h2>Цена {price} руб.</h2>
+				<h3>Цена {price} руб.</h3>
 			</div>
 		)
 	}

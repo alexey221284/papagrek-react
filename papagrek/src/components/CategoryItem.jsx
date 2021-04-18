@@ -4,11 +4,11 @@ import "../App.css"
 
 class CategoryItem extends React.Component {
 	render() {
-		const { title, id } = this.props;
+		const { title } = this.props;
 
 		return(
-			<div className="CategoryItem">
-				<h3>{id}. {title}</h3>
+			<div className="categoryItem">
+				{title}
 			</div>
 		)
 	}

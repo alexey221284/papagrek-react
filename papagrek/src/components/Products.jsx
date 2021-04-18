@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductItem from "./ProductItem";
 import Api from "./Api";
 import Breadcrumbs from "./Breadcrumbs";
+import ProductItem from "./ProductItem";
 
 class Products extends React.Component {
 
@@ -19,7 +19,6 @@ class Products extends React.Component {
 		try {
 			let allProductsFirstCategory = await Api.get('/category/2');
 			let productsCard = allProductsFirstCategory.data.products;
-
 			const categoryName = allProductsFirstCategory.data.title;
 
 			let productsCardJSX = productsCard
@@ -45,7 +44,7 @@ class Products extends React.Component {
 		let {categoryName, productsCardJSX} = this.state;
 
 		return (
-			<div>
+			<div className="products">
 				<Breadcrumbs categoryName={categoryName}/>
 				<div className="cardContainer">
 					{ productsCardJSX }

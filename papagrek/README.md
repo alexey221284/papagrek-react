@@ -1,2 +1,2 @@
-# papagrek-react
+# papagrek-react v3
 CMS online-shop

@@ -7,7 +7,7 @@ class Category extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			categoryName: null
+			categoryItemsJSX: null
 		};
 	}
 
@@ -36,7 +36,7 @@ class Category extends React.Component {
 
 		return (
 			<div className="category">
-				<h2>Категории товаров:</h2>
+				<p>Категории товаров:</p>
 				{ categoryItemsJSX }
 			</div>
 		)

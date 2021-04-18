@@ -341,7 +341,7 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
 /* footer */
 
 .footer {
-  height: 38vh;
+  height: max-content;
   position: relative;
   font-family: 'circe';
   background: #753175;
@@ -410,18 +410,7 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-}
-
-.main_block {
-  position: relative;
-  top: 100px;
-  text-align: center;
-  height: 307px;
-}
-
-.main_block p {
-  text-align: left;
-  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 /* Basket */
@@ -472,9 +461,32 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   color: #753175;
 }
 
+.products {
+  margin: 15px;
+}
+
 .category {
   width: 18vw;
-  background: #f7b1f7;
+  padding: 5px;
+  margin: 5px;
+}
+
+.categoryItem {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.categoryItem:hover {
+  cursor: pointer;
+}
+
+.category p {
+  background: #753175;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .ProductItem img {
@@ -502,4 +514,20 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+/* MainBlock */
+.mainBlock {
+  position: relative;
+  height: 445px;
+}
+
+.mainBlock h1 {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.mainBlock p {
+  margin: 100px 20px 20px 20px;
 }
