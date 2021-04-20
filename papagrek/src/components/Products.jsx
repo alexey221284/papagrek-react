@@ -15,9 +15,9 @@ class Products extends React.Component {
 		};
 	}
 
-	async componentDidMount() {
+	async componentDidMount(id=1) {
 		try {
-			let allProductsFirstCategory = await Api.get('/category/2');
+			let allProductsFirstCategory = await Api.get(`/category/${id}`);
 			let productsCard = allProductsFirstCategory.data.products;
 			const categoryName = allProductsFirstCategory.data.title;
 
@@ -54,4 +54,4 @@ class Products extends React.Component {
 	}
 }
 
-export default Products
+export default Products;

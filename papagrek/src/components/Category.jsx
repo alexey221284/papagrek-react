@@ -15,11 +15,9 @@ class Category extends React.Component {
 		try {
 			let allCategory = await Api.get('/category');
 			let categoryTitle = allCategory.data;
-
 			let categoryItemsJSX = categoryTitle
-				.map(item => <CategoryItem title={item.title} id={item.id}/>
+				.map(item => <CategoryItem title={item.title} key={item.id} id={item.id} />
 			);
-			console.log("categoryItemsJSX " + categoryItemsJSX);
 
 			this.setState({
 				...this.state, ...{

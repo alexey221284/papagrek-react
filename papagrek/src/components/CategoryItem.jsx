@@ -1,21 +1,28 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import "../App.css"
+import {NavLink} from "react-router-dom";
 
 class CategoryItem extends React.Component {
 	render() {
-		const { title } = this.props;
+		const { title, id } = this.props;
+		let path = "/products/" + id;
+
+		const renderCurrentCategory = () => {
+			alert(id);
+		};
 
 		return(
-			<div className="categoryItem">
+			<NavLink className="categoryItem" to={path} onClick={renderCurrentCategory}>
 				{title}
-			</div>
+			</NavLink>
 		)
 	}
 }
 
 CategoryItem.propTypes = {
-	title: PropTypes.string
+	title: PropTypes.string,
+	id: PropTypes.number
 };
 
 export default CategoryItem

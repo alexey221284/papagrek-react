@@ -24,4 +24,4 @@ ProductItem.propTypes = {
 	price: PropTypes.number
 };
 
-export default ProductItem
+export default ProductItem;

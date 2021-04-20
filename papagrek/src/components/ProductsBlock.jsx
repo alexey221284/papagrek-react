@@ -8,7 +8,6 @@ const ProductsBlock = () => {
 			<Category/>
 			<Products/>
 		</div>
-
 	)
 }
 
