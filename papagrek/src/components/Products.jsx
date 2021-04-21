@@ -18,7 +18,7 @@ class Products extends React.Component {
 	async componentDidMount() {
 		try {
 			let allProductsFirstCategory = await Api.get(`/products`);
-			let productsCard = allProductsFirstCategory.data;
+			let productsCard = allProductsFirstCategory.data[1];
 			const categoryName = allProductsFirstCategory.data.title;
 
 			let productsCardJSX = productsCard
@@ -27,7 +27,7 @@ class Products extends React.Component {
 								 price={card.price}
 								 urlPhoto={card.urlPhoto}
 								 description={card.description}
-								 /*key={card.id}*/
+								 key={card.id}
 					/>
 				);
 

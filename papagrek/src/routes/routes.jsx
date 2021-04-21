@@ -9,8 +9,8 @@ const AppRouter = () => {
 		<BrowserRouter >
 				<Route exact path="/" component={Main}/>
 				<Route path="/catalog" component={Catalog} />
+				<Route path="/products/0" render={() => <Catalog id={0} />} />
 				<Route path="/products/1" render={() => <Catalog id={1} />} />
-				<Route path="/products/2" render={() => <Catalog id={2} />} />
 		</BrowserRouter >
 	)
 }
