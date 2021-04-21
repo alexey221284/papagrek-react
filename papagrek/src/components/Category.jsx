@@ -14,8 +14,8 @@ class Category extends React.Component {
 	async componentDidMount() {
 		try {
 			let allCategory = await Api.get('/category');
-			let categoryTitle = allCategory.data;
-			let categoryItemsJSX = categoryTitle
+			let categoryData = allCategory.data;
+			let categoryItemsJSX = categoryData
 				.map(item => <CategoryItem title={item.title} key={item.id} id={item.id} />
 			);
 

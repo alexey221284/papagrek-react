@@ -8,12 +8,8 @@ class CategoryItem extends React.Component {
 		const { title, id } = this.props;
 		let path = "/products/" + id;
 
-		const renderCurrentCategory = () => {
-			alert(id);
-		};
-
 		return(
-			<NavLink className="categoryItem" to={path} onClick={renderCurrentCategory}>
+			<NavLink className="categoryItem" to={path}>
 				{title}
 			</NavLink>
 		)
@@ -22,7 +18,7 @@ class CategoryItem extends React.Component {
 
 CategoryItem.propTypes = {
 	title: PropTypes.string,
-	id: PropTypes.number
+	id: PropTypes.string
 };
 
 export default CategoryItem

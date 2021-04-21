@@ -15,9 +15,9 @@ class Products extends React.Component {
 		};
 	}
 
-	async componentDidMount(id=1) {
+	async componentDidMount() {
 		try {
-			let allProductsFirstCategory = await Api.get(`/category/${id}`);
+			let allProductsFirstCategory = await Api.get(`/category/${this.props.id}`);
 			let productsCard = allProductsFirstCategory.data.products;
 			const categoryName = allProductsFirstCategory.data.title;
 
@@ -26,7 +26,9 @@ class Products extends React.Component {
 					<ProductItem title={card.title}
 								 price={card.price}
 								 urlPhoto={card.urlPhoto}
-								 description={card.description}/>
+								 description={card.description}
+								 key={card.id}
+					/>
 				);
 
 			this.setState({
