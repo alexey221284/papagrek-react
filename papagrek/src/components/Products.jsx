@@ -18,7 +18,7 @@ class Products extends React.Component {
 	async componentDidMount() {
 		try {
 			let allProductsFirstCategory = await Api.get(`/products`);
-			let productsCard = allProductsFirstCategory.data[1];
+			let productsCard = allProductsFirstCategory.data[this.props.id];
 			const categoryName = allProductsFirstCategory.data.title;
 
 			let productsCardJSX = productsCard
