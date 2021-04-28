@@ -13,7 +13,7 @@ class Category extends React.Component {
 
 	async componentDidMount() {
 		try {
-			let allCategory = await Api.get('/category');
+			let allCategory = await Api.get("/categories");
 			let categoryData = allCategory.data;
 			let categoryItemsJSX = categoryData
 				.map(item => <CategoryItem title={item.title} key={item.id} id={item.id} />

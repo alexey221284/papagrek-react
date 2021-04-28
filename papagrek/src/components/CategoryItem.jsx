@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 class CategoryItem extends React.Component {
 	render() {
-		const { title, id } = this.props;
+		const { title, id} = this.props;
 		let path = "/products/" + id;
 
 		return(
