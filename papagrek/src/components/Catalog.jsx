@@ -3,11 +3,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ProductsBlock from "./ProductsBlock";
 
-const Catalog = (props) => {
+const Catalog = () => {
 	return(
 		<div className="catalog">
 			<Header/>
-			<ProductsBlock id={props.id} />
+			<ProductsBlock/>
 			<Footer/>
 		</div>
 	)

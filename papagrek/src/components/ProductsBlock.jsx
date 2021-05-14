@@ -1,12 +1,12 @@
 import React from 'react';
 import Category from "./Category";
-import Products from "./Products";
+import {WithURLProductsContainerComponent} from "./Products";
 
-const ProductsBlock = (props) => {
+const ProductsBlock = () => {
 	return(
 		<div className="productsBlock">
 			<Category/>
-			<Products id={props.id}/>
+			<WithURLProductsContainerComponent />
 		</div>
 	)
 }

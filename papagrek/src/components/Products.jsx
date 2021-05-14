@@ -2,6 +2,7 @@ import React from 'react';
 import Api from "./Api";
 import Breadcrumbs from "./Breadcrumbs";
 import ProductItem from "./ProductItem";
+import {withRouter} from "react-router-dom";
 
 class Products extends React.Component {
 
@@ -17,7 +18,8 @@ class Products extends React.Component {
 
 	async componentDidMount() {
 		try {
-			let productsOfCategory = await Api.get(`/category/${this.props.id}`);
+			let categoryId = this.props.match.params.categoryId;
+			let productsOfCategory = await Api.get(`/category/${categoryId}`);
 			let productsCard = productsOfCategory.data;
 			const categoryName = productsOfCategory.title;
 
@@ -28,6 +30,35 @@ class Products extends React.Component {
 								 urlPhoto={card.urlPhoto}
 								 description={card.description}
 								 key={card.id}
+					/>
+				);
+
+			this.setState({
+				...this.state, ...{
+					categoryName,
+					productsCardJSX
+				}
+			});
+		} catch (e) {
+			console.log(`Axios request failed: ${e}`);
+		}
+	}
+
+	async componentDidUpdate() {
+		try {
+			let categoryId = this.props.match.params.categoryId;
+			let productsOfCategory = await Api.get(`/category/${categoryId}`);
+			let productsCard = productsOfCategory.data;
+			const categoryName = productsOfCategory.title;
+
+			let productsCardJSX = productsCard
+				.map(card =>
+					<ProductItem title={card.title}
+								 price={card.price}
+								 urlPhoto={card.urlPhoto}
+								 description={card.description}
+								 key={card.id}
+								 id={card.id}
 					/>
 				);
 
@@ -55,5 +86,7 @@ class Products extends React.Component {
 		);
 	}
 }
+
+export let WithURLProductsContainerComponent = withRouter(Products);
 
 export default Products;
