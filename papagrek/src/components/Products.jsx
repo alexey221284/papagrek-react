@@ -17,6 +17,7 @@ class Products extends React.Component {
 	}
 
 	async componentDidMount() {
+		console.log('componentDidMount');
 		try {
 			let categoryId = this.props.match.params.categoryId;
 			let productsOfCategory = await Api.get(`/category/${categoryId}`);
@@ -45,6 +46,7 @@ class Products extends React.Component {
 	}
 
 	async componentDidUpdate() {
+		console.log('componentDidUpdate');
 		try {
 			let categoryId = this.props.match.params.categoryId;
 			let productsOfCategory = await Api.get(`/category/${categoryId}`);
@@ -74,6 +76,8 @@ class Products extends React.Component {
 	}
 
 	render() {
+		console.log('render');
+
 		let {categoryName, productsCardJSX} = this.state;
 
 		return (

@@ -1,11 +1,11 @@
 {
-    "source": "mockoon:1.13.0",
+    "source": "mockoon:1.14.0",
     "data": [
         {
             "type": "environment",
             "item": {
                 "uuid": "",
-                "lastMigration": 13,
+                "lastMigration": 15,
                 "name": "Papagrek mock",
                 "endpointPrefix": "",
                 "latency": 0,
@@ -19,7 +19,7 @@
                         "responses": [
                             {
                                 "uuid": "",
-                                "body": "[\r\n    {\r\n      \"id\": \"1\",\r\n      \"title\": \"Тканевые ремешки\",\r\n      \"urlCategoryPhoto\": \"\"\r\n    },\r\n    {\r\n      \"id\": \"2\",\r\n      \"title\": \"Силиконовые ремешки\",\r\n      \"urlCategoryPhoto\": \"\"\r\n    },\r\n    {\r\n      \"id\": \"3\",\r\n      \"title\": \"Спортивные ремешки с отверстиями\",\r\n      \"urlCategoryPhoto\": \"\"\r\n    }\r\n  ]",
+                                "body": "[\r\n    {\r\n      \"id\": \"1\",\r\n      \"title\": \"Тканевые ремешки\",\r\n      \"urlCategoryPhoto\": \"/img/categories/katalog_tkan.jpg\"\r\n    },\r\n    {\r\n      \"id\": \"2\",\r\n      \"title\": \"Силиконовые ремешки\",\r\n      \"urlCategoryPhoto\": \"/img/categories/katalog_silikon.jpg\"\r\n    },\r\n    {\r\n      \"id\": \"3\",\r\n      \"title\": \"Спортивные ремешки с отверстиями\",\r\n      \"urlCategoryPhoto\": \"/img/categories/katalog_otverst.png\"\r\n    }\r\n  ]",
                                 "latency": 0,
                                 "statusCode": 200,
                                 "label": "Creates 10 random users, or the amount specified in the 'total' query param",
@@ -37,7 +37,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -65,7 +66,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -93,7 +95,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -121,7 +124,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -149,7 +153,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -177,7 +182,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -205,7 +211,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -233,7 +240,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -261,7 +269,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     },
                     {
                         "uuid": "",
@@ -289,7 +298,8 @@
                             }
                         ],
                         "enabled": true,
-                        "randomResponse": false
+                        "randomResponse": false,
+                        "sequentialResponse": false
                     }
                 ],
                 "proxyMode": false,
@@ -313,7 +323,8 @@
                         "key": "",
                         "value": ""
                     }
-                ]
+                ],
+                "proxyRemovePrefix": false
             }
         }
     ]

@@ -449,12 +449,12 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
     margin-top: 20px;
 }
 
-.catalog, .itemContainer {
+.catalog, .itemContainer, .allCatalog {
     display: flex;
     flex-direction: column;
 }
 
-.productsBlock, .itemBlock {
+.productsBlock, .itemBlock, .catalogBlock {
     display: flex;
     flex-direction: row;
     min-height: 60vh;
@@ -516,7 +516,7 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
     border: 1px solid white;
 }
 
-.ProductItem:hover {
+.ProductItem:hover, .categoryInViewPicturesItem:hover {
     border: 1px solid #f7b1f7;
     border-radius: 5px;
     cursor: pointer;
@@ -549,13 +549,37 @@ input[type="text"], input[type="password"], input[type=email], input[type=tel], 
 }
 
 .imageItem {
-  padding: 20px;
-}
-
-.imageItem:hover {
+    padding: 20px;
 }
 
 .imageItem img {
-    width: 500px;
+    width: 450px;
     padding: 15px;
+}
+
+.categoryInViewPicture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.categoryInViewPicturesItem a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryInViewPicturesItem img {
+    height: 200px;
+}
+
+.categoryInViewPicturesItem {
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
 }

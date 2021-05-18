@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
 import ProductsBlock from "./ProductsBlock";
 
-const Catalog = () => {
+const CurrentCatalog = () => {
 	return(
 		<div className="catalog">
 			<Header/>
@@ -13,4 +13,4 @@ const Catalog = () => {
 	)
 }
 
-export default Catalog
+export default CurrentCatalog
