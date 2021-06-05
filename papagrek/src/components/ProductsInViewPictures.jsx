@@ -16,7 +16,8 @@ class ProductsInViewPictures extends React.Component {
 			let allCategory = await Api.get("/categories");
 			let categoryData = allCategory.data;
 			let CategoryInViewPicturesItemJSX = categoryData
-				.map(item => <CategoryInViewPicturesItem title={item.title} key={item.id} id={item.id} urlCategoryPhoto={item.urlCategoryPhoto}/>
+				.map(item => <CategoryInViewPicturesItem title={item.title} key={item.id} id={item.id}
+														 urlCategoryPhoto={item.urlCategoryPhoto}/>
 				);
 
 			this.setState({
@@ -34,7 +35,7 @@ class ProductsInViewPictures extends React.Component {
 
 		return (
 			<div className="categoryInViewPicture">
-				{ CategoryInViewPicturesItemJSX }
+				{CategoryInViewPicturesItemJSX}
 			</div>
 		)
 	}

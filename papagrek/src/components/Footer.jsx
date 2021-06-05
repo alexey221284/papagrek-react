@@ -49,11 +49,11 @@ const Footer = () => {
 						</div>
 						<div>
 							<Link className="footerLink" to="https://odnoklassniki.ru/papagrek">
-								<img className="size" src={okIcon} /></Link>
+								<img className="size" src={okIcon}/></Link>
 						</div>
 						<div>
 							<Link className="footerLink" to="https://pinterest.com/olivesargreek">
-								<img className="size" src={pintIcon} /></Link>
+								<img className="size" src={pintIcon}/></Link>
 						</div>
 					</div>
 				</div>

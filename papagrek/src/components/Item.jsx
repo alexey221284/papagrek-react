@@ -1,5 +1,4 @@
 import React from 'react'
-import Breadcrumbs from "./Breadcrumbs";
 import Api from "./Api";
 import {withRouter} from "react-router-dom";
 
@@ -46,7 +45,7 @@ class Item extends React.Component {
 		let {productUrlPhoto, productTitle, productDescription, productPrice} = this.state;
 		return (
 			<div className="componentItem">
-				<Breadcrumbs/>
+
 				<div className="imageItem">
 					<img src={productUrlPhoto} alt="фото товара"/>
 					<p>{productTitle}</p>

@@ -4,13 +4,13 @@ import Footer from "./Footer";
 import ProductsBlock from "./ProductsBlock";
 
 const CurrentCatalog = () => {
-	return(
+	return (
 		<div className="catalog">
 			<Header/>
 			<ProductsBlock/>
 			<Footer/>
 		</div>
 	)
-}
+};
 
 export default CurrentCatalog

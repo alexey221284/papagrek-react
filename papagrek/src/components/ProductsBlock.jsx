@@ -3,12 +3,12 @@ import Category from "./Category";
 import {WithURLProductsContainerComponent} from "./Products";
 
 const ProductsBlock = () => {
-	return(
+	return (
 		<div className="productsBlock">
 			<Category/>
-			<WithURLProductsContainerComponent />
+			<WithURLProductsContainerComponent/>
 		</div>
 	)
-}
+};
 
 export default ProductsBlock;

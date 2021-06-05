@@ -1,6 +1,6 @@
 import React from 'react'
 import Category from "./Category";
-import Item, {WithURLItemContainerComponent} from "./Item";
+import {WithURLItemContainerComponent} from "./Item";
 
 const ItemBlock = () => {
 	return (
@@ -9,6 +9,6 @@ const ItemBlock = () => {
 			<WithURLItemContainerComponent/>
 		</div>
 	)
-}
+};
 
 export default ItemBlock

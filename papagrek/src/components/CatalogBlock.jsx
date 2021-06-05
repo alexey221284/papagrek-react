@@ -3,12 +3,12 @@ import Category from "./Category";
 import ProductsInViewPictures from "./ProductsInViewPictures";
 
 const CatalogBlock = () => {
-	return(
+	return (
 		<div className="catalogBlock">
 			<Category/>
-			<ProductsInViewPictures />
+			<ProductsInViewPictures/>
 		</div>
 	)
-}
+};
 
 export default CatalogBlock;
