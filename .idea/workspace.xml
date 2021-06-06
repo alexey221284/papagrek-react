@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cfecdaa8-5198-4dc6-9f43-79b4ca7fccb4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/AllCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/AllCatalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/Breadcrumbs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/Breadcrumbs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/CatalogBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/CatalogBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/CategoryInViewPicturesItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/CategoryInViewPicturesItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/CategoryItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/CategoryItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/CurrentCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/CurrentCatalog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/papagrek/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/papagrek/src/components/Item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/Item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/ItemBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/ItemBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/ItemContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/ItemContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/MainBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/MainBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/ProductItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/ProductItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/papagrek/src/components/ProductsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/ProductsBlock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/papagrek/src/components/ProductsInViewPictures.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/papagrek/src/components/ProductsInViewPictures.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,7 +94,7 @@
       <workItem from="1622100534297" duration="2917000" />
       <workItem from="1622118477230" duration="1836000" />
       <workItem from="1622143889982" duration="2445000" />
-      <workItem from="1622902002876" duration="16492000" />
+      <workItem from="1622902002876" duration="22843000" />
     </task>
     <task id="LOCAL-00001" summary="add Item.jsx &amp; new dinamics routing">
       <created>1620987721244</created>
@@ -123,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621340646839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add new functional Breadcrumbs">
+      <created>1622930396754</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622930396754</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Item.jsx &amp; new dinamics routing" />
     <MESSAGE value="add categoryViewInPictures.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add categoryViewInPictures.jsx" />
+    <MESSAGE value="add new functional Breadcrumbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new functional Breadcrumbs" />
   </component>
 </project>

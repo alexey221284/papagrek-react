@@ -1,6 +1,7 @@
 import React from 'react'
 import Api from "./Api";
 import {withRouter} from "react-router-dom";
+import Breadcrumbs from "./Breadcrumbs";
 
 class Item extends React.Component {
 
@@ -45,7 +46,7 @@ class Item extends React.Component {
 		let {productUrlPhoto, productTitle, productDescription, productPrice} = this.state;
 		return (
 			<div className="componentItem">
-
+				<h2> {productDescription}</h2>
 				<div className="imageItem">
 					<img src={productUrlPhoto} alt="фото товара"/>
 					<p>{productTitle}</p>
