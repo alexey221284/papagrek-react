@@ -49,19 +49,19 @@ const Footer = () => {
 						</div>
 						<div>
 							<Link className="footerLink" to="https://odnoklassniki.ru/papagrek">
-								<img className="size" src={okIcon} /></Link>
+								<img className="size" src={okIcon}/></Link>
 						</div>
 						<div>
 							<Link className="footerLink" to="https://pinterest.com/olivesargreek">
-								<img className="size" src={pintIcon} /></Link>
+								<img className="size" src={pintIcon}/></Link>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div className="copyright">
-				<p>2019-2020 © Papagrek - интернет-магазин аксессуаров к часам Apple Watch.</p>
-				<p>Все права защищены. Доставка по Саратову и Энгельсу.</p>
+				<p>2019-2021 © Papagrek - интернет-магазин аксессуаров к часам Apple Watch.</p>
+				<p>Все права защищены. Самовывоз. Доставка по Саратову и Энгельсу.</p>
 			</div>
 		</div>
 	)

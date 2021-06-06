@@ -5,13 +5,13 @@ import CatalogBlock from "./CatalogBlock";
 
 
 const AllCatalog = () => {
-	return(
+	return (
 		<div className="allCatalog">
 			<Header/>
-			<CatalogBlock />
+			<CatalogBlock/>
 			<Footer/>
 		</div>
 	)
-}
+};
 
 export default AllCatalog

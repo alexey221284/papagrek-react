@@ -16,8 +16,8 @@ class Category extends React.Component {
 			let allCategory = await Api.get("/categories");
 			let categoryData = allCategory.data;
 			let categoryItemsJSX = categoryData
-				.map(item => <CategoryItem title={item.title} key={item.id} id={item.id} />
-			);
+				.map(item => <CategoryItem title={item.title} key={item.id} id={item.id}/>
+				);
 
 			this.setState({
 				...this.state, ...{
@@ -35,7 +35,7 @@ class Category extends React.Component {
 		return (
 			<div className="category">
 				<p>Категории товаров:</p>
-				{ categoryItemsJSX }
+				{categoryItemsJSX}
 			</div>
 		)
 	}

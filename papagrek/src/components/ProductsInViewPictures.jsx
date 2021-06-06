@@ -1,6 +1,7 @@
 import React from 'react';
 import Api from "./Api";
 import CategoryInViewPicturesItem from "./CategoryInViewPicturesItem";
+import Breadcrumbs from "./Breadcrumbs";
 
 class ProductsInViewPictures extends React.Component {
 
@@ -16,7 +17,8 @@ class ProductsInViewPictures extends React.Component {
 			let allCategory = await Api.get("/categories");
 			let categoryData = allCategory.data;
 			let CategoryInViewPicturesItemJSX = categoryData
-				.map(item => <CategoryInViewPicturesItem title={item.title} key={item.id} id={item.id} urlCategoryPhoto={item.urlCategoryPhoto}/>
+				.map(item => <CategoryInViewPicturesItem title={item.title} key={item.id} id={item.id}
+														 urlCategoryPhoto={item.urlCategoryPhoto}/>
 				);
 
 			this.setState({
@@ -33,8 +35,11 @@ class ProductsInViewPictures extends React.Component {
 		let {CategoryInViewPicturesItemJSX} = this.state;
 
 		return (
-			<div className="categoryInViewPicture">
-				{ CategoryInViewPicturesItemJSX }
+			<div className="products">
+				<Breadcrumbs/>
+				<div className="categoryInViewPicture">
+					{CategoryInViewPicturesItemJSX}
+				</div>
 			</div>
 		)
 	}

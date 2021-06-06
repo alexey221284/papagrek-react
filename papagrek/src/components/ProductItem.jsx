@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import "../App.css"
 import {NavLink} from "react-router-dom";
 
@@ -17,16 +16,8 @@ class ProductItem extends React.Component {
 					<h3>Цена {price} руб.</h3>
 				</div>
 			</NavLink>
-
 		)
 	}
 }
-
-ProductItem.propTypes = {
-	urlPhoto: PropTypes.string,
-	title: PropTypes.string,
-	description: PropTypes.string,
-	price: PropTypes.number
-};
 
 export default ProductItem;

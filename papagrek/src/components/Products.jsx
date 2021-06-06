@@ -22,7 +22,6 @@ class Products extends React.Component {
 			let categoryId = this.props.match.params.categoryId;
 			let productsOfCategory = await Api.get(`/category/${categoryId}`);
 			let productsCard = productsOfCategory.data;
-			const categoryName = productsOfCategory.title;
 
 			let productsCardJSX = productsCard
 				.map(card =>
@@ -36,7 +35,7 @@ class Products extends React.Component {
 
 			this.setState({
 				...this.state, ...{
-					categoryName,
+					categoryId,
 					productsCardJSX
 				}
 			});
@@ -51,7 +50,7 @@ class Products extends React.Component {
 			let categoryId = this.props.match.params.categoryId;
 			let productsOfCategory = await Api.get(`/category/${categoryId}`);
 			let productsCard = productsOfCategory.data;
-			const categoryName = productsOfCategory.title;
+
 
 			let productsCardJSX = productsCard
 				.map(card =>
@@ -66,7 +65,7 @@ class Products extends React.Component {
 
 			this.setState({
 				...this.state, ...{
-					categoryName,
+					categoryId,
 					productsCardJSX
 				}
 			});
@@ -77,14 +76,12 @@ class Products extends React.Component {
 
 	render() {
 		console.log('render');
-
-		let {categoryName, productsCardJSX} = this.state;
-
+		let {categoryId, productsCardJSX} = this.state;
 		return (
 			<div className="products">
-				<Breadcrumbs categoryName={categoryName}/>
+				<Breadcrumbs categoryId={categoryId}/>
 				<div className="cardContainer">
-					{ productsCardJSX }
+					{productsCardJSX}
 				</div>
 			</div>
 		);
@@ -92,5 +89,3 @@ class Products extends React.Component {
 }
 
 export let WithURLProductsContainerComponent = withRouter(Products);
-
-export default Products;
